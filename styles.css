@@ -1,0 +1,127 @@
+body {
+    background-color: #043106;
+    font-family: 'Montserrat', sans-serif;
+
+    height: 100%;
+
+    background-image: url("/src/img/shrekHouse.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 4rem;
+}
+#falas {
+    text-align: right;
+
+    padding: 1rem 2.3rem 9rem;
+}
+
+#falas p {
+    background-color: #B0B3A2;
+    color: #fff;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+    
+    font-size: 18px;
+    font-weight: 500;
+    
+    margin-bottom: 18px;
+    padding: 13px 10px 13px 20px;
+    border-radius: 10px;
+}
+
+   
+.blink {
+    opacity: 0;
+    animation: dialogueBlink 2s ease 0s 1 normal forwards;
+    display: block;
+}  
+
+.blink2 {
+    opacity: 0;
+    animation: dialogueBlink 2s ease 2s 1 normal forwards;
+    display: block;
+}  
+
+.blink3 {
+    opacity: 0;
+    animation: dialogueBlink 2s ease 4s 1 normal forwards;
+    display: block;
+}  
+
+img {
+    
+    max-width: 159px;
+    max-height: 172px;
+
+    animation: rotate 2s ease 2s infinite forwards;
+               
+}
+
+
+@keyframes dialogueBlink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+
+        opacity: 1;
+    }
+}
+
+
+footer {
+    background-color: #2a3d27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   line-height: 3;
+}
+
+footer p {
+    color: #a4aeaf;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-height: 754px) {
+    
+    main {
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 300px) {
+    img {
+        width: 50%;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    #falas {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 733px) {
+    
+}
